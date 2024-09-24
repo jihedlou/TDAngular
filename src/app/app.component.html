@@ -1,0 +1,16 @@
+<app-header></app-header>
+<app-home></app-home>
+<app-footer></app-footer>
+<input (input)="onInputChange($event)"> <br>
+
+<input name="color" [(ngModel)]="color"><br> <!--de faire sans component.ts-->
+
+{{persone.id}} <br>
+{{persone.name}}<br>
+{{persone.age}}
+<div [style.color]="color">{{titre}}</div>
+
+<button type="button" class="btn btn-success"  [disabled]="quantity <= 0" (click)="Acheter()">Acheter</button> 
+{{quantity}}
+<br>
+<img [src] = "imgsrc" [height]=height [width]=width>
