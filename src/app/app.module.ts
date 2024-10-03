@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ProductModule } from './features/product/product.module';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { HighlightDirective } from './highlight.directive';
     ListCategoriesComponent,
     NavbarComponent,
     FilterPipe,
-    HighlightDirective
+    HighlightDirective,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]

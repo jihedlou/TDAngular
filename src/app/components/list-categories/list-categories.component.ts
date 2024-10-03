@@ -18,7 +18,7 @@ export class ListCategoriesComponent {
 
       {"id":2,
         "title":"Petit électroménager",
-      "image":"assets/images/img2.jpg", description:"is simply dummy text of the printing and typesetting industry.",
+      "image":"assets/images/img2.jpg", description:"jjdjjd dkdjd xt of the printing and typesetting industry.",
       "available":true},
 
       {"id":3,

@@ -7,7 +7,7 @@
       <ng-container *ngFor="let c of categories  | filter:title">
     <!--<div *ngIf="title.toLowerCase() == c.title.toLowerCase()||title==''" class="col-md-4" style="margin-bottom: 20px;" > -->
 
-      <div class="col-md-4" style="margin-bottom: 20px;">
+      <div class="col-md-4" style="margin-bottom: 20px;" appHighlight>
         
         <img [src]="c.image" [alt]="c.title" class="img-fluid h-50 w-75" (click) ="affichedescription(c.id)">
         <h3>{{c.title | uppercase}}</h3>
@@ -17,7 +17,7 @@
    
    
        
-        <button class="btn btn-primary" *ngIf="c.available==true">Voir produits</button> <!--afficher button si available=true-->
+        <button class="btn btn-primary" *ngIf="c.available==true" [routerLink]="['/products/',c.id]">Voir produits</button> <!--afficher button si available=true-->
         <p *ngIf="c.available == false"> Catégorie non disponible</p> <!--afficher message  si available de button =false-->
       </div> 
    <!-- </div> -->
